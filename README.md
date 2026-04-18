@@ -1,17 +1,30 @@
 # Fantasy Hockey Lines
 
-A small WXT + React starter extension project.
+A browser extension for fantasy hockey line management, built with WXT and React.
 
-## Start the project
+## Installation
 
-1. Install dependencies:
-   - `npm install`
-2. Run the dev build for Firefox:
-   - `npm run dev:firefox`
+```bash
+npm install
+```
 
-## Build (Firefox)
+## Development
 
-- `npm run build:firefox`
+Run the development server:
+
+- Chrome: `npm run dev`
+- Firefox: `npm run dev:firefox`
+
+Load the extension as a temporary add-on in your browser.
+
+## Build
+
+Build the extension:
+
+- Chrome: `npm run build`
+- Firefox: `npm run build:firefox`
+
+The output will be in the `.output/` directory.
 
 ## Testing
 
@@ -25,57 +38,11 @@ Run tests with UI:
 npm run test:ui
 ```
 
-Tests are required to pass before merging PRs to main.
+## Contributing
 
-## Git Workflow
+Feel free to open issues or submit pull requests. Ensure tests pass before submitting.
 
-### Branch Naming
+Branch naming: `<type>/<description>` (e.g., `feature/player-mapping`)  
+PR titles: `<type>: <description>` (e.g., `feat: add player mapping`)  
 
-Use the following format for branch names:
-
-```
-<type>/<issue-number>-<description>
-```
-
-**Types:**
-- `feature/` — New feature
-- `fix/` — Bug fix
-- `refactor/` — Code refactoring
-- `docs/` — Documentation
-- `test/` — Test additions/updates
-
-**Examples:**
-```
-feature/1-player-mapping
-fix/2-espn-overlay-styling
-docs/3-setup-instructions
-```
-
-### Pull Request Naming
-
-Use the following format for PR titles:
-
-```
-<type>: <description>
-```
-
-**Types:**
-- `feat` — New feature
-- `fix` — Bug fix
-- `refactor` — Code refactoring
-- `docs` — Documentation
-- `test` — Test additions/updates
-- `chore` — Maintenance tasks
-
-**Examples:**
-```
-feat: add player name normalization
-fix: resolve ESPN overlay z-index issue
-docs: update contributing guide
-test: add tests for player matcher
-```
-
-All PRs require:
-- ✅ Tests passing
-- ✅ TypeScript compilation passing
-- ✅ At least one approval
+Types: `feature`, `fix`, `refactor`, `docs`, `test`, `chore`
