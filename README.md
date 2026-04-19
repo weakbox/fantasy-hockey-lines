@@ -42,7 +42,7 @@ npm run test:ui
 
 Feel free to open issues or submit pull requests. Ensure tests pass before submitting.
 
-Branch naming: `<type>/<description>` (e.g., `feature/player-mapping`)  
+Branch naming: `<type>/<issue number>-<description>` (e.g., `feature/player-mapping`)  
 PR titles: `<type>: <description>` (e.g., `feat: add player mapping`)  
 
 Types: `feature`, `fix`, `refactor`, `docs`, `test`, `chore`
