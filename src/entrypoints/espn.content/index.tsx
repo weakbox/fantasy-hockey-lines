@@ -6,12 +6,15 @@ export default defineContentScript({
   main() {
     console.log('[FHL]: Running ESPN content script...');
 
-    waitForElement('th[title="Skaters"]', () => {
-      mountReactComponentIntoTableRows('th[title="Skaters"]', () => <LinePlaceholder />);
+    const skatersSelector = 'th[title="Skaters"]';
+    const goaliesSelector = 'th[title="Goalies"]';
+
+    waitForElement(skatersSelector, () => {
+      mountReactComponentIntoTableRows(skatersSelector, () => <LinePlaceholder />);
     });
 
-    waitForElement('th[title="Goalies"]', () => {
-      mountReactComponentIntoTableRows('th[title="Goalies"]', () => <LinePlaceholder />);
+    waitForElement(goaliesSelector, () => {
+      mountReactComponentIntoTableRows(goaliesSelector, () => <LinePlaceholder />);
     });
   }
 });

@@ -30,7 +30,7 @@ The output will be in the `.output/` directory.
 
 Run tests:
 ```bash
-npm test
+npm run test
 ```
 
 Run tests with UI:
